@@ -1,25 +1,22 @@
-# Build static files
-FROM node:25-alpine AS builder
+# Development image
+FROM node:25-alpine
 
 WORKDIR /app
 
-ENV NODE_ENV=production
+# Install pnpm
+RUN apk add --no-cache pnpm
 
+# Copy package files
+COPY package.json pnpm-lock.yaml* ./
+
+# Install dependencies
+RUN pnpm install
+
+# Copy source
 COPY . .
 
-RUN apk add pnpm && \
-    CI=true pnpm install && \
-    pnpm build
+# Expose Vite dev port
+EXPOSE 5173
 
-# Production image, copy all the static files and run next
-FROM caddy:2-alpine AS runner
-
-WORKDIR /app
-
-COPY --from=builder /app/dist /app/dist
-COPY --from=builder /app/Caddyfile /etc/caddy/Caddyfile
-
-EXPOSE 3000
-
-HEALTHCHECK --interval=3s --timeout=5s --retries=10 \
-    CMD ["wget", "-O", "/dev/null", "http://localhost:3000"]
+# Run Vite in dev mode with host binding
+CMD ["pnpm", "dev", "--host", "0.0.0.0"]

@@ -63,7 +63,7 @@ export function TournamentLogo({ tournamentDataFull }: { tournamentDataFull: Tou
 }
 
 export function getTournamentHeadTitle(tournamentDataFull: Tournament) {
-  return tournamentDataFull !== null ? `Bracket | ${tournamentDataFull.name}` : 'Bracket';
+  return tournamentDataFull !== null ? `Ranking de Sinuca ART | ${tournamentDataFull.name}` : 'Ranking de Sinuca ART';
 }
 
 export function TournamentTitle({ tournamentDataFull }: { tournamentDataFull: Tournament }) {

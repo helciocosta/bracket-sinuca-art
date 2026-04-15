@@ -56,10 +56,7 @@ export default function LoginPage() {
   return (
     <>
       <Title ta="center" mt={100}>
-        {t('welcome_title')}{' '}
-        <Text inherit variant="gradient" component="span">
-          Bracket
-        </Text>
+        Ranking de Sinuca ART
       </Title>
       <Container size={480} my={40}>
         <Paper withBorder shadow="md" p={30} pt={8} mt={30} radius="md">

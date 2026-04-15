@@ -12,7 +12,7 @@ export function Brand() {
             src="/favicon.svg"
             alt="Bracket logg"
           />
-          <Title style={{ height: '38px', marginBottom: '0.4rem' }}>Bracket</Title>
+          <Title style={{ height: '38px', marginBottom: '0.4rem' }}>Sinuca ART</Title>
         </Group>
       </UnstyledButton>
     </Center>
@@ -30,7 +30,7 @@ export function BrandFooter() {
           alt="Bracket logg"
         />
         <Text size="xl" ml="0.75rem">
-          Bracket
+          Sinuca ART
         </Text>
       </Center>
     </Center>
