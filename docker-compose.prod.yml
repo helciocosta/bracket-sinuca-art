@@ -1,0 +1,48 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=bracket
+      - POSTGRES_PASSWORD=bracket
+      - POSTGRES_DB=bracket
+    volumes:
+      - bracket_pg_data:/var/lib/postgresql/data
+    networks:
+      - bracket_lan
+
+  backend:
+    image: ghcr.io/helciocosta/sinuca-art-backend:latest
+    restart: always
+    ports:
+      - "8400:8400"
+    volumes:
+      - bracket_static_data:/app/static
+    environment:
+      - PG_DSN=postgresql://bracket:bracket@db:5432/bracket
+      - JWT_SECRET=TROQUE_ISSO_POR_UMA_SENHA_FORTE_NA_PRODUCAO
+      - BACKEND_CORS_ORIGINS=["http://localhost:5173", "http://localhost:8400", "https://seu-dominio.com"]
+    depends_on:
+      - db
+    networks:
+      - bracket_lan
+
+  frontend:
+    image: ghcr.io/helciocosta/sinuca-art-frontend:latest
+    restart: always
+    ports:
+      - "80:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8400
+    depends_on:
+      - backend
+    networks:
+      - bracket_lan
+
+networks:
+  bracket_lan:
+    driver: bridge
+
+volumes:
+  bracket_pg_data:
+  bracket_static_data:
