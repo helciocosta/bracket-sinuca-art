@@ -150,6 +150,13 @@ See the [contribution docs](https://docs.bracketapp.nl/docs/community/contributi
 <table>
 <tr>
     <td align="center">
+        <a href="https://github.com/helciocosta">
+            <img src="https://avatars.githubusercontent.com/u/6432459?v=4" width="100;" alt="helciocosta"/>
+            <br />
+            <sub><b>Helcio O Costa</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/evroon">
             <img src="https://avatars.githubusercontent.com/u/11857441?v=4" width="100;" alt="evroon"/>
             <br />
@@ -164,24 +171,10 @@ See the [contribution docs](https://docs.bracketapp.nl/docs/community/contributi
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/BachErik">
-            <img src="https://avatars.githubusercontent.com/u/75324423?v=4" width="100;" alt="BachErik"/>
+        <a href="https://github.com/nvanheuverzwijn">
+            <img src="https://avatars.githubusercontent.com/u/943226?v=4" width="100;" alt="nvanheuverzwijn"/>
             <br />
-            <sub><b>BachErik</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/djpiper28">
-            <img src="https://avatars.githubusercontent.com/u/13609136?v=4" width="100;" alt="djpiper28"/>
-            <br />
-            <sub><b>Danny Piper</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/MaxRickettsUy">
-            <img src="https://avatars.githubusercontent.com/u/22103252?v=4" width="100;" alt="MaxRickettsUy"/>
-            <br />
-            <sub><b>Max Ricketts-Uy</b></sub>
+            <sub><b>Nicolas Vanheuverzwijn</b></sub>
         </a>
     </td>
     <td align="center">
@@ -190,13 +183,27 @@ See the [contribution docs](https://docs.bracketapp.nl/docs/community/contributi
             <br />
             <sub><b>Sevi C</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/MaxRickettsUy">
+            <img src="https://avatars.githubusercontent.com/u/22103252?v=4" width="100;" alt="MaxRickettsUy"/>
+            <br />
+            <sub><b>Max Ricketts-Uy</b></sub>
+        </a>
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/nvanheuverzwijn">
-            <img src="https://avatars.githubusercontent.com/u/943226?v=4" width="100;" alt="nvanheuverzwijn"/>
+        <a href="https://github.com/djpiper28">
+            <img src="https://avatars.githubusercontent.com/u/13609136?v=4" width="100;" alt="djpiper28"/>
             <br />
-            <sub><b>Nicolas Vanheuverzwijn</b></sub>
+            <sub><b>Danny Piper</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/BachErik">
+            <img src="https://avatars.githubusercontent.com/u/75324423?v=4" width="100;" alt="BachErik"/>
+            <br />
+            <sub><b>BachErik</b></sub>
         </a>
     </td>
     <td align="center">
@@ -226,15 +233,15 @@ See the [contribution docs](https://docs.bracketapp.nl/docs/community/contributi
             <br />
             <sub><b>IzStriker</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/jmillxyz">
             <img src="https://avatars.githubusercontent.com/u/531476?v=4" width="100;" alt="jmillxyz"/>
             <br />
             <sub><b>Jon Miller</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/oscartobar">
             <img src="https://avatars.githubusercontent.com/u/10423124?v=4" width="100;" alt="oscartobar"/>
